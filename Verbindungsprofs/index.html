@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Schriftart */
+            margin: 0; /* Kein standardmäßiger Rand */
+            background-color: #f4f4f4; /* Hintergrundfarbe */
+        }
+
+        /* Kopfzeile mit Logo und Menüleiste */
+        .header {
+            display: flex; /* Flexbox für horizontale Anordnung */
+            align-items: center; /* Vertikale Ausrichtung der Elemente */
+            background-color: #add8e6; /* Hellblauer Hintergrund für die Kopfzeile */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schatten für die Kopfzeile */
+            padding: 10px; /* Innenabstand */
+            position: sticky; /* Menüleiste fixieren */
+            top: 0; /* Oben ausrichten */
+            z-index: 1000; /* Über anderen Inhalten anzeigen */
+            width: 100%; /* Kopfzeile auf volle Breite setzen */
+        }
+
+        /* Logo */
+        .logo {
+            width: 200px; /* Breite des Logos vergrößert */
+            margin-right: 20px; /* Abstand zwischen Logo und Menüleiste */
+        }
+
+        /* Menüleiste */
+        .navbar {
+            display: flex; /* Flexbox für horizontale Anordnung */
+            flex-grow: 1; /* Menüleiste füllt den verbleibenden Raum */
+            justify-content: flex-end; /* Menüelemente nach rechts ausrichten */
+            margin-left: auto; /* Abstand nach links für Flexbox */
+        }
+
+        .navbar a {
+            display: block; /* Blockelement */
+            color: #333; /* Schriftfarbe */
+            text-align: center; /* Text zentrieren */
+            padding: 14px 20px; /* Innenabstand */
+            text-decoration: none; /* Unterstreichung entfernen */
+            font-size: 16px; /* Schriftgröße */
+        }
+
+        .navbar a:hover {
+            background-color: #87cefa; /* Hellblaue Hover-Farbe */
+            color: white; /* Schriftfarbe beim Hover */
+        }
+
+        /* Hauptcontainer */
+        .container {
+            padding: 20px; /* Innenabstand */
+            max-width: 1200px; /* Maximale Breite */
+            margin: auto; /* Zentrierung */
+            background-color: white; /* Hintergrundfarbe */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten */
+        }
+
+        /* Überschrift */
+        h1 {
+            text-align: center; /* Text zentrieren */
+            color: #333; /* Schriftfarbe */
+        }
+
+        /* Absatz */
+        p {
+            line-height: 1.6; /* Zeilenhöhe */
+            color: #555; /* Textfarbe */
+        }
+
+        /* Container für die Animation */
+        .animation-container {
+            position: relative;
+            width: 200px; /* Breite des Containers */
+            height: 200px; /* Höhe des Containers */
+            margin: auto; /* Zentrierung */
+        }
+
+        /* Stil und Position der Schraube */
+        .bolt {
+            position: absolute;
+            width: 100px; /* Breite der Schraube */
+            height: 100px; /* Höhe der Schraube */
+            top: 0; /* Position oben */
+            left: 50px; /* Zentriert im Container */
+            animation: rotateBolt 4s linear infinite, moveBolt 4s ease-in-out forwards; /* Animation */
+            transform-origin: center; /* Drehachse der Schraube */
+        }
+
+        /* Stil und Position der Mutter */
+        .nut {
+            position: absolute;
+            width: 100px; /* Breite der Mutter */
+            height: 100px; /* Höhe der Mutter */
+            top: 100px; /* Position der Mutter */
+            left: 50px; /* Zentriert im Container */
+        }
+
+        /* Animation der Schraube (Drehung um eigene Achse + Bewegung nach unten) */
+        @keyframes rotateBolt {
+            from {
+                transform: rotate(0deg); /* Startposition */
+            }
+            to {
+                transform: rotate(360deg); /* Endposition */
+            }
+        }
+
+        /* Schraube wird vertikal in die Mutter geschraubt */
+        @keyframes moveBolt {
+            0% {
+                transform: translateY(0) rotate(0deg); /* Startposition */
+            }
+            100% {
+                transform: translateY(60px) rotate(0deg); /* Bewegung nach unten */
+            }
+        }
+
+        /* Google Maps Container */
+        .map-container {
+            margin-top: 20px; /* Abstand nach oben */
+            width: 100%; /* Vollbreite */
+            height: 400px; /* Höhe der Karte */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten für die Karte */
+        }
+    </style>
+</head>
+<body>
+    <!-- Kopfzeile mit Logo und Menüleiste -->
+    <div class="header">
+        <img src="Logo.jpg" alt="Unternehmenslogo" class="logo">
+        <div class="navbar">
+            <a href="#home">Start</a>
+            <a href="#firmeninfo">Firmeninfo</a>
+            <a href="#produkte">Produkte</a>
+            <a href="#bestellung">Bestellung</a>
+            <a href="#anfragen">Anfragen</a>
+            <a href="#kontakt">Kontakt</a>
+        </div>
+    </div>
+
+    <!-- Hauptinhalt -->
+    <div class="container">
+        <h1>Willkommen auf unserer Homepage</h1>
+        <p>
+            Hier finden Sie Informationen über unser Unternehmen, unsere Produkte und 
+            Dienstleistungen. Nutzen Sie die Menüpunkte, um mehr über uns zu erfahren.
+        </p>
+        <p>
+            Bei Fragen oder Anfragen stehen wir Ihnen jederzeit gerne zur Verfügung. 
+            Kontaktieren Sie uns einfach über den entsprechenden Menüpunkt.
+        </p>
+
+        <!-- Animation -->
+        <div class="animation-container">
+            <!-- Schraube -->
+            <img src="bolt.svg" alt="Schraube" class="bolt">
+            
+            <!-- Mutter -->
+            <img src="nut.svg" alt="Mutter" class="nut">
+        </div>
+
+        <!-- Google Maps -->
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253623.51680325367!2d13.372974511940694!3d52.52668103028503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b1f5144e7e2d73%3A0x3f3034c77b8e42b8!2sPaul%20%26%20Co.%20Verbindungsprofis%20GmbH!5e0!3m2!1sde!2sde!4v1697375113185!5m2!1sde!2sde"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</body>
+</html>

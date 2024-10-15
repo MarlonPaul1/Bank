@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 36 36"
+   aria-hidden="true"
+   role="img"
+   class="iconify iconify--twemoji"
+   preserveAspectRatio="xMidYMid meet"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="Nut.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.04875"
+     inkscape:cx="400"
+     inkscape:cy="400"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <path
+     fill="#ccd6dd"
+     d="m 11.112225,1.7359815 c 0,0 -9.49e-4,-1.41421302 1.413264,-1.41516202 l 14.142133,-0.0095 c 0,0 1.414213,-9.49e-4 1.415161,1.41326402 l 0.0028,4.2426395 c 0,0 9.49e-4,1.414213 -1.413264,1.415162 l -14.142133,0.0095 c 0,0 -1.414213,9.49e-4 -1.415161,-1.413264 z"
+     id="path3" />
+  <path
+     fill="#8899a6"
+     d="m 12.525489,0.32081948 c -1.414213,9.49e-4 -1.413264,1.41516202 -1.413264,1.41516202 l 0.0028,4.2426395 c 9.48e-4,1.414213 1.415161,1.413264 1.415161,1.413264 l 2.828427,-0.0019 -0.0047,-7.07106552 z"
+     id="path4" />
+  <path
+     fill="#e1e8ed"
+     d="m 26.672365,7.382399 c 1.414213,-9.49e-4 1.413264,-1.415162 1.413264,-1.415162 l -0.0028,-4.2426395 C 28.081881,0.31038448 26.667668,0.31133348 26.667668,0.31133348 l -2.828427,0.0019 0.0047,7.07106552 z"
+     id="path5" />
+</svg>
