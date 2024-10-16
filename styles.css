@@ -1,0 +1,7 @@
+.header-container {
+    display: flex;
+    background-color: rgba(65, 78, 197, 0.726);
+    height: 100px;
+    box-shadow: 10px 10px 5px rgba(65, 78, 197, 0.404);
+    border-radius: 10px;
+}
