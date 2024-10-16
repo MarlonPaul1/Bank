@@ -1,0 +1,53 @@
+
+        .animation-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+
+       
+        .bolt {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 0;
+            left: 50px;
+            animation: rotateBolt 4s linear infinite, moveBolt 4s ease-in-out forwards;
+            transform-origin: center;
+        }
+
+        .nut {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 100px;
+            left: 50px;
+        }
+
+        @keyframes rotateBolt {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+                @keyframes moveBolt {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(60px) rotate(0deg);
+            }
+        }
+
+
+        <div class="animation-container">
+            
+            <img src="bolt.svg" alt="Schraube" class="bolt">
+            
+            
+            <img src="nut.svg" alt="Mutter" class="nut">
+        </div>
